@@ -1,0 +1,817 @@
+﻿  Performing Custom Build Tools
+  Performing Custom Build Tools
+  Performing Custom Build Tools
+  Performing Custom Build Tools
+  AnimationAsset.cc
+  ImageAsset.cc
+  ParticleAsset.cc
+  ParticleAssetEmitter.cc
+  ParticleAssetField.cc
+  ParticleAssetFieldCollection.cc
+  AmbientForceController.cc
+  GroupedSceneController.cc
+  PickingSceneController.cc
+  PointForceController.cc
+  BuoyancyController.cc
+  BatchRender.cc
+  CoreMath.cc
+  ImageFrameProvider.cc
+  ImageFrameProviderCore.cc
+  ParticleSystem.cc
+  RenderProxy.cc
+  SpriteBase.cc
+  SpriteBatch.cc
+  SpriteBatchItem.cc
+  SpriteBatchQuery.cc
+  Utility.cc
+  Vector2.cc
+  WaveComposite.cc
+  guiImageButtonCtrl.cc
+  guiSceneObjectCtrl.cc
+  guiSpriteCtrl.cc
+  SceneWindow.cc
+  CompositeSprite.cc
+  ImageFont.cc
+  ParticlePlayer.cc
+  SceneObject.cc
+  SceneObjectList.cc
+  SceneObjectSet.cc
+  Scroller.cc
+  ShapeVector.cc
+  Sprite.cc
+  Trigger.cc
+  ContactFilter.cc
+  DebugDraw.cc
+  Scene.cc
+  SceneRenderFactories.cpp
+  SceneRenderQueue.cpp
+  WorldQuery.cc
+  crc.cc
+  hashFunction.cc
+  assetBase.cc
+  assetFieldTypes.cc
+  assetManager.cc
+  assetQuery.cc
+  assetTagsManifest.cc
+  declaredAssets.cc
+  referencedAssets.cc
+  AudioAsset.cc
+  b2BroadPhase.cpp
+  b2CollideCircle.cpp
+  b2CollideEdge.cpp
+  b2CollidePolygon.cpp
+  b2Collision.cpp
+  b2Distance.cpp
+  b2DynamicTree.cpp
+  b2TimeOfImpact.cpp
+  b2ChainShape.cpp
+  b2CircleShape.cpp
+  b2EdgeShape.cpp
+  b2PolygonShape.cpp
+  b2BlockAllocator.cpp
+  b2Draw.cpp
+  b2Math.cpp
+  b2Settings.cpp
+  b2StackAllocator.cpp
+  b2Timer.cpp
+  b2Body.cpp
+  b2ContactManager.cpp
+  b2Fixture.cpp
+  b2Island.cpp
+  b2World.cpp
+  b2WorldCallbacks.cpp
+  b2ChainAndCircleContact.cpp
+  b2ChainAndPolygonContact.cpp
+  b2CircleContact.cpp
+  b2Contact.cpp
+  b2ContactSolver.cpp
+  b2EdgeAndCircleContact.cpp
+  b2EdgeAndPolygonContact.cpp
+  b2PolygonAndCircleContact.cpp
+  b2PolygonContact.cpp
+  b2DistanceJoint.cpp
+  b2FrictionJoint.cpp
+  b2GearJoint.cpp
+  b2Joint.cpp
+  b2MotorJoint.cpp
+  b2MouseJoint.cpp
+  b2PrismaticJoint.cpp
+  b2PulleyJoint.cpp
+  b2RevoluteJoint.cpp
+  b2RopeJoint.cpp
+  b2WeldJoint.cpp
+  b2WheelJoint.cpp
+  b2Rope.cpp
+  bitTables.cc
+  hashTable.cc
+  nameTags.cpp
+  undo.cc
+  vector.cc
+  consoleBaseType.cc
+  consoleDictionary.cc
+  consoleExprEvalState.cc
+  consoleNamespace.cc
+  ConsoleTypeValidators.cc
+  profiler.cc
+  RemoteDebugger1.cc
+  RemoteDebuggerBase.cc
+  RemoteDebuggerBridge.cc
+  telnetDebugger.cc
+  delegateSignal.cpp
+  defaultGame.cc
+  gameInterface.cc
+  bitmapBmp.cc
+  bitmapJpeg.cc
+  bitmapPng.cc
+  color.cc
+  dgl.cc
+  dglMatrix.cc
+  DynamicTexture.cc
+  gBitmap.cc
+  gFont.cc
+  gPalette.cc
+  PNGImage.cpp
+  splineUtil.cc
+  TextureDictionary.cc
+  TextureHandle.cc
+  TextureManager.cc
+  guiArrayCtrl.cc
+  guiBackgroundCtrl.cc
+  guiBitmapBorderCtrl.cc
+  guiBitmapCtrl.cc
+  guiBubbleTextCtrl.cc
+  guiCanvas.cc
+  guiColorPicker.cc
+  guiConsole.cc
+  guiConsoleEditCtrl.cc
+  guiConsoleTextCtrl.cc
+  guiControl.cc
+  guiDefaultControlRender.cc
+  guiFadeinBitmapCtrl.cc
+  guiInputCtrl.cc
+  guiListBoxCtrl.cc
+  guiMessageVectorCtrl.cc
+  guiMLTextCtrl.cc
+  guiMLTextEditCtrl.cc
+  guiMouseEventCtrl.cc
+  guiPopUpCtrl.cc
+  guiPopUpCtrlEx.cc
+  guiProgressCtrl.cc
+  guiScriptNotifyControl.cc
+  guiSliderCtrl.cc
+  guiTabPageCtrl.cc
+  guiTextCtrl.cc
+  guiTextEditCtrl.cc
+  guiTextEditSliderCtrl.cc
+  guiTextListCtrl.cc
+  guiTickCtrl.cc
+  guiTreeViewCtrl.cc
+  guiTypes.cc
+  lang.cc
+  messageVector.cc
+  actionMap.cc
+  bitStream.cc
+  bufferStream.cc
+  fileObject.cc
+  fileStream.cc
+  fileStreamObject.cc
+  fileSystemFunctions.cpp
+  filterStream.cc
+  memStream.cc
+  nStream.cc
+  resizeStream.cc
+  resourceDictionary.cc
+  resourceManager.cc
+  streamObject.cc
+  centralDir.cc
+  compressor.cc
+  deflate.cc
+  extraField.cc
+  fileHeader.cc
+  stored.cc
+  zipArchive.cc
+  zipCryptStream.cc
+  zipObject.cc
+  zipSubStream.cc
+  zipTempStream.cc
+  rectClipper.cpp
+  dataChunker.cc
+  frameAllocator.cc
+  dispatcher.cc
+  eventManager.cc
+  message.cc
+  messageForwarder.cc
+  scriptMsgListener.cc
+  moduleDefinition.cc
+  moduleManager.cc
+  moduleMergeDefinition.cc
+  connectionProtocol.cc
+  connectionStringTable.cc
+  httpObject.cc
+  netConnection.cc
+  netDownload.cc
+  netEvent.cc
+  netGhost.cc
+  netInterface.cc
+  netObject.cc
+  netStringTable.cc
+  netTest.cc
+  networkProcessList.cc
+  RemoteCommandEvent.cc
+  serverQuery.cc
+  tcpObject.cc
+  telnetConsole.cc
+  taml.cc
+  tamlBinaryReader.cc
+  tamlBinaryWriter.cc
+  tamlCustom.cc
+  tamlWriteNode.cc
+  tamlXmlParser.cc
+  tamlXmlReader.cc
+  tamlXmlWriter.cc
+  tinystr.cpp
+  tinyxml.cpp
+  tinyxmlerror.cpp
+  tinyxmlparser.cpp
+  audio.cc
+  audioBuffer.cc
+  audioDataBlock.cc
+  audioFunctions.cc
+  audioStreamSourceFactory.cc
+  wavStreamSource.cc
+  dynamicConsoleMethodComponent.cpp
+  simComponent.cpp
+  behaviorComponent.cpp
+  behaviorInstance.cpp
+  behaviorTemplate.cpp
+  astAlloc.cc
+  astNodes.cc
+  cmdgram.cc
+  CMDscan.cc
+  codeBlock.cc
+  compiledEval.cc
+  compiler.cc
+  console.cc
+  consoleDoc.cc
+  consoleFunctions.cc
+  consoleLogger.cc
+  consoleObject.cc
+  consoleParser.cc
+  consoleTypes.cc
+  gameConnection.cc
+  version.cc
+  mathTypes.cc
+  mathUtils.cc
+  mBox.cc
+  mConsoleFunctions.cc
+  mMath_C.cc
+  mMathAltivec.cc
+  mMathAMD.cc
+  mMathFn.cc
+  mMathSSE.cc
+  mMatrix.cc
+  mPlaneTransformer.cc
+  mQuadPatch.cc
+  mQuat.cc
+  mRandom.cc
+  mSolver.cc
+  mSplinePatch.cc
+  SimXMLDocument.cpp
+  win32FileDialog.cc
+  CursorManager.cc
+  fileDialog.cc
+  platform.cc
+  platformAssert.cc
+  platformCPU.cc
+  platformFileIO.cc
+  platformFont.cc
+  platformMemory.cc
+  platformNetwork.cc
+  platformString.cc
+  platformVideo.cc
+  popupMenu.cc
+  msgBox.cpp
+  cardProfile.cpp
+  winAsmBlit.cc
+  winConsole.cc
+  winCPUInfo.cc
+  winDInputDevice.cc
+  winDirectInput.cc
+  winExec.cc
+  winFileio.cc
+  winFont.cc
+  winGL.cc
+  winGLSpecial.cc
+  winInput.cc
+  winMath.cc
+  winMath_ASM.cc
+  winMemory.cc
+e:\torque\game\alienshipgame\engine\source\platformwin32\winglspecial.cc(193): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'GLdouble'
+e:\torque\game\alienshipgame\engine\source\platformwin32\winglspecial.cc(193): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'GLdouble'
+e:\torque\game\alienshipgame\engine\source\platformwin32\winglspecial.cc(193): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 3 has type 'GLdouble'
+e:\torque\game\alienshipgame\engine\source\platformwin32\winglspecial.cc(193): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 4 has type 'GLdouble'
+e:\torque\game\alienshipgame\engine\source\platformwin32\winglspecial.cc(200): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'GLdouble'
+e:\torque\game\alienshipgame\engine\source\platformwin32\winglspecial.cc(200): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'GLdouble'
+e:\torque\game\alienshipgame\engine\source\platformwin32\winglspecial.cc(200): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 3 has type 'GLdouble'
+e:\torque\game\alienshipgame\engine\source\platformwin32\winglspecial.cc(200): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 4 has type 'GLdouble'
+e:\torque\game\alienshipgame\engine\source\platformwin32\winglspecial.cc(207): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'GLdouble'
+e:\torque\game\alienshipgame\engine\source\platformwin32\winglspecial.cc(207): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'GLdouble'
+e:\torque\game\alienshipgame\engine\source\platformwin32\winglspecial.cc(207): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 3 has type 'GLdouble'
+e:\torque\game\alienshipgame\engine\source\platformwin32\winglspecial.cc(207): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 4 has type 'GLdouble'
+e:\torque\game\alienshipgame\engine\source\platformwin32\winglspecial.cc(214): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'GLdouble'
+e:\torque\game\alienshipgame\engine\source\platformwin32\winglspecial.cc(214): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'GLdouble'
+e:\torque\game\alienshipgame\engine\source\platformwin32\winglspecial.cc(214): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 3 has type 'GLdouble'
+e:\torque\game\alienshipgame\engine\source\platformwin32\winglspecial.cc(214): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 4 has type 'GLdouble'
+e:\torque\game\alienshipgame\engine\source\platformwin32\winglspecial.cc(214): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 5 has type 'GLdouble'
+e:\torque\game\alienshipgame\engine\source\platformwin32\winglspecial.cc(214): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 6 has type 'GLdouble'
+e:\torque\game\alienshipgame\engine\source\platformwin32\winglspecial.cc(214): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 7 has type 'GLdouble'
+e:\torque\game\alienshipgame\engine\source\platformwin32\winglspecial.cc(214): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 8 has type 'GLdouble'
+e:\torque\game\alienshipgame\engine\source\platformwin32\winglspecial.cc(214): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 9 has type 'GLdouble'
+  winNet.cc
+  winOGLVideo.cc
+e:\torque\game\alienshipgame\engine\source\platformwin32\wininput.cc(83): warning C4996: 'GetVersionExW': was declared deprecated
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\sysinfoapi.h(445): note: see declaration of 'GetVersionExW'
+  winOpenAL.cc
+  winProcessControl.cc
+  winSemaphore.cc
+e:\torque\game\alienshipgame\engine\source\platformwin32\winoglvideo.cc(216): warning C4996: 'GetVersionExW': was declared deprecated
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\sysinfoapi.h(445): note: see declaration of 'GetVersionExW'
+e:\torque\game\alienshipgame\engine\source\platformwin32\winoglvideo.cc(266): warning C4996: 'GetVersionExW': was declared deprecated
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\sysinfoapi.h(445): note: see declaration of 'GetVersionExW'
+e:\torque\game\alienshipgame\engine\source\platformwin32\winoglvideo.cc(475): warning C4996: 'GetVersionExW': was declared deprecated
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\sysinfoapi.h(445): note: see declaration of 'GetVersionExW'
+  winStrings.cc
+  winTime.cc
+  winTLS.cc
+  winUser.cc
+  winVFS.cc
+  winVideo.cc
+  winWindow.cc
+  popupMenuWin32.cc
+  win32DirectoryResolver.cpp
+  win32MsgBox.cpp
+e:\torque\game\alienshipgame\engine\source\platformwin32\nativedialogs\win32msgbox.cpp(44): warning C4838: conversion from 'unsigned int' to 'S32' requires a narrowing conversion
+e:\torque\game\alienshipgame\engine\source\platformwin32\nativedialogs\win32msgbox.cpp(53): warning C4838: conversion from 'unsigned int' to 'S32' requires a narrowing conversion
+e:\torque\game\alienshipgame\engine\source\platformwin32\nativedialogs\win32msgbox.cpp(63): warning C4838: conversion from 'unsigned int' to 'S32' requires a narrowing conversion
+e:\torque\game\alienshipgame\engine\source\platformwin32\winwindow.cc(1243): warning C4838: conversion from 'S32' to 'BYTE' requires a narrowing conversion
+  mutex.cc
+  thread.cc
+  Tickable.cc
+  scriptGroup.cc
+  scriptObject.cc
+  simBase.cc
+  simConsoleEvent.cc
+  simConsoleThreadExecEvent.cc
+  simDatablock.cc
+  simDictionary.cc
+  simFieldDictionary.cc
+  simManager.cc
+  simObject.cc
+  SimObjectList.cc
+  simSerialize.cpp
+  simSet.cc
+  findMatch.cc
+  stringBuffer.cc
+  stringStack.cc
+  stringTable.cc
+  stringUnit.cpp
+  unicode.cc
+  guiBitmapButtonCtrl.cc
+  guiBorderButton.cc
+  guiButtonBaseCtrl.cc
+  guiButtonCtrl.cc
+  guiCheckBoxCtrl.cc
+  guiIconButtonCtrl.cc
+  guiRadioCtrl.cc
+  guiToolboxButtonCtrl.cc
+  guiAutoScrollCtrl.cc
+  guiCtrlArrayCtrl.cc
+  guiDragAndDropCtrl.cc
+  guiDynamicCtrlArrayCtrl.cc
+  guiFormCtrl.cc
+  guiFrameCtrl.cc
+  guiPaneCtrl.cc
+  guiRolloutCtrl.cc
+  guiScrollCtrl.cc
+  guiStackCtrl.cc
+  guiTabBookCtrl.cc
+  guiWindowCtrl.cc
+  guiControlListPopup.cc
+  guiDebugger.cc
+  guiEditCtrl.cc
+  guiFilterCtrl.cc
+  guiGraphCtrl.cc
+  guiImageList.cc
+  guiInspector.cc
+  guiInspectorTypes.cc
+  guiMenuBar.cc
+  guiSeparatorCtrl.cc
+  platformFileIoTests.cc
+  platformMemoryTests.cc
+  platformStringTests.cc
+  unitTesting.cc
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(497): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(497): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(502): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(507): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(502): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(507): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(512): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(512): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(517): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(517): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(522): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(522): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(529): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(529): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(536): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(536): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(543): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(543): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(550): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(558): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(550): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(558): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(497): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(502): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(507): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(512): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(517): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(522): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(529): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(536): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(543): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(550): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(558): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(2839): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(2949): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator2<T1,T2>' being compiled (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(2839): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(2841): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(2949): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator2<T1,T2>' being compiled (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(2841): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(2954): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3081): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator3<T1,T2,T3>' being compiled (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(2956): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3086): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(2954): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3232): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator4<T1,T2,T3,T4>' being compiled (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3088): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3081): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator3<T1,T2,T3>' being compiled (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(2956): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3237): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3399): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator5<T1,T2,T3,T4,T5>' being compiled (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3086): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3239): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3232): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator4<T1,T2,T3,T4>' being compiled (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3088): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3405): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3585): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator6<T1,T2,T3,T4,T5,T6>' being compiled (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3408): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3237): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3399): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator5<T1,T2,T3,T4,T5>' being compiled (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3239): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3591): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3788): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator7<T1,T2,T3,T4,T5,T6,T7>' being compiled (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3594): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3405): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3585): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator6<T1,T2,T3,T4,T5,T6>' being compiled (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3408): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3794): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4010): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator8<T1,T2,T3,T4,T5,T6,T7,T8>' being compiled (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3797): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3591): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(2839): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3788): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator7<T1,T2,T3,T4,T5,T6,T7>' being compiled (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(2949): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator2<T1,T2>' being compiled (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3594): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(2841): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4016): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4249): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator9<T1,T2,T3,T4,T5,T6,T7,T8,T9>' being compiled (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4019): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(2954): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3081): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator3<T1,T2,T3>' being compiled (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(2956): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3794): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4010): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator8<T1,T2,T3,T4,T5,T6,T7,T8>' being compiled (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3797): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3086): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4255): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4505): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>' being compiled (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4258): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4016): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4249): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator9<T1,T2,T3,T4,T5,T6,T7,T8,T9>' being compiled (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4019): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3232): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator4<T1,T2,T3,T4>' being compiled (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3088): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4520): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4533): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder2<Generator1,Generator2>' being compiled (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4255): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3237): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4505): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>' being compiled (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3399): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator5<T1,T2,T3,T4,T5>' being compiled (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4542): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4258): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3239): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4557): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder3<Generator1,Generator2,Generator3>' being compiled (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4567): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4584): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder4<Generator1,Generator2,Generator3,Generator4>' being compiled (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4594): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4613): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder5<Generator1,Generator2,Generator3,Generator4,Generator5>' being compiled (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4625): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3405): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4646): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder6<Generator1,Generator2,Generator3,Generator4,Generator5,Generator6>' being compiled (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3585): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator6<T1,T2,T3,T4,T5,T6>' being compiled (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3408): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4659): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4682): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder7<Generator1,Generator2,Generator3,Generator4,Generator5,Generator6,Generator7>' being compiled (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4697): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4722): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder8<Generator1,Generator2,Generator3,Generator4,Generator5,Generator6,Generator7,Generator8>' being compiled (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4738): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4520): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4766): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder9<Generator1,Generator2,Generator3,Generator4,Generator5,Generator6,Generator7,Generator8,Generator9>' being compiled (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4533): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder2<Generator1,Generator2>' being compiled (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3591): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4782): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4542): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3788): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator7<T1,T2,T3,T4,T5,T6,T7>' being compiled (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4813): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder10<Generator1,Generator2,Generator3,Generator4,Generator5,Generator6,Generator7,Generator8,Generator9,Generator10>' being compiled (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4557): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder3<Generator1,Generator2,Generator3>' being compiled (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3594): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4567): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4584): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder4<Generator1,Generator2,Generator3,Generator4>' being compiled (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4594): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4613): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder5<Generator1,Generator2,Generator3,Generator4,Generator5>' being compiled (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4625): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4646): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder6<Generator1,Generator2,Generator3,Generator4,Generator5,Generator6>' being compiled (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3794): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4659): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4010): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator8<T1,T2,T3,T4,T5,T6,T7,T8>' being compiled (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3797): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4682): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder7<Generator1,Generator2,Generator3,Generator4,Generator5,Generator6,Generator7>' being compiled (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4697): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4722): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder8<Generator1,Generator2,Generator3,Generator4,Generator5,Generator6,Generator7,Generator8>' being compiled (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4738): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4766): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder9<Generator1,Generator2,Generator3,Generator4,Generator5,Generator6,Generator7,Generator8,Generator9>' being compiled (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4782): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4016): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4813): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder10<Generator1,Generator2,Generator3,Generator4,Generator5,Generator6,Generator7,Generator8,Generator9,Generator10>' being compiled (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4249): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator9<T1,T2,T3,T4,T5,T6,T7,T8,T9>' being compiled (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4019): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4255): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4505): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>' being compiled (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4258): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4520): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4533): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder2<Generator1,Generator2>' being compiled (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4542): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4557): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder3<Generator1,Generator2,Generator3>' being compiled (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4567): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4584): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder4<Generator1,Generator2,Generator3,Generator4>' being compiled (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4594): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4613): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder5<Generator1,Generator2,Generator3,Generator4,Generator5>' being compiled (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4625): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4646): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder6<Generator1,Generator2,Generator3,Generator4,Generator5,Generator6>' being compiled (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4659): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4682): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder7<Generator1,Generator2,Generator3,Generator4,Generator5,Generator6,Generator7>' being compiled (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4697): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4722): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder8<Generator1,Generator2,Generator3,Generator4,Generator5,Generator6,Generator7,Generator8>' being compiled (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4738): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4766): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder9<Generator1,Generator2,Generator3,Generator4,Generator5,Generator6,Generator7,Generator8,Generator9>' being compiled (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4782): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4813): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder10<Generator1,Generator2,Generator3,Generator4,Generator5,Generator6,Generator7,Generator8,Generator9,Generator10>' being compiled (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(497): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(502): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(507): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(512): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(517): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(522): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(529): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(536): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(543): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(550): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(558): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(2839): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(2949): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator2<T1,T2>' being compiled (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(2841): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(2954): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3081): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator3<T1,T2,T3>' being compiled (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(2956): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3086): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3232): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator4<T1,T2,T3,T4>' being compiled (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3088): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3237): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3399): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator5<T1,T2,T3,T4,T5>' being compiled (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3239): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3405): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3585): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator6<T1,T2,T3,T4,T5,T6>' being compiled (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3408): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3591): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3788): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator7<T1,T2,T3,T4,T5,T6,T7>' being compiled (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3594): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3794): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4010): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator8<T1,T2,T3,T4,T5,T6,T7,T8>' being compiled (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(3797): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4016): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4249): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator9<T1,T2,T3,T4,T5,T6,T7,T8,T9>' being compiled (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4019): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4255): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4505): note: see reference to class template instantiation 'testing::internal::CartesianProductGenerator10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>' being compiled (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4258): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4520): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4533): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder2<Generator1,Generator2>' being compiled (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4542): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4557): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder3<Generator1,Generator2,Generator3>' being compiled (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4567): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4584): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder4<Generator1,Generator2,Generator3,Generator4>' being compiled (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4594): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4613): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder5<Generator1,Generator2,Generator3,Generator4,Generator5>' being compiled (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4625): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4646): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder6<Generator1,Generator2,Generator3,Generator4,Generator5,Generator6>' being compiled (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4659): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4682): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder7<Generator1,Generator2,Generator3,Generator4,Generator5,Generator6,Generator7>' being compiled (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4697): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4722): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder8<Generator1,Generator2,Generator3,Generator4,Generator5,Generator6,Generator7,Generator8>' being compiled (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4738): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4766): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder9<Generator1,Generator2,Generator3,Generator4,Generator5,Generator6,Generator7,Generator8,Generator9>' being compiled (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4782): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\internal\gtest-param-util-generated.h(4813): note: see reference to class template instantiation 'testing::internal::CartesianProductHolder10<Generator1,Generator2,Generator3,Generator4,Generator5,Generator6,Generator7,Generator8,Generator9,Generator10>' being compiled (compiling source file ..\..\source\testing\unitTesting.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(768): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(498): note: see reference to function template instantiation 'void testing::internal::PrintTupleTo<std::tuple<>>(const T &,std::ostream *)' being compiled
+          with
+          [
+              T=std::tuple<>
+          ] (compiling source file ..\..\source\testing\tests\platformFileIoTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(768): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(498): note: see reference to function template instantiation 'void testing::internal::PrintTupleTo<std::tuple<>>(const T &,std::ostream *)' being compiled
+          with
+          [
+              T=std::tuple<>
+          ] (compiling source file ..\..\source\testing\tests\platformMemoryTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(768): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(498): note: see reference to function template instantiation 'void testing::internal::PrintTupleTo<std::tuple<>>(const T &,std::ostream *)' being compiled
+          with
+          [
+              T=std::tuple<>
+          ] (compiling source file ..\..\source\testing\tests\platformStringTests.cc)
+e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(768): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning. (compiling source file ..\..\source\testing\unitTesting.cc)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\tuple(1333): note: see declaration of 'std::tr1' (compiling source file ..\..\source\testing\unitTesting.cc)
+  e:\torque\game\alienshipgame\engine\source\testing\googletest\include\gtest\gtest-printers.h(498): note: see reference to function template instantiation 'void testing::internal::PrintTupleTo<std::tuple<>>(const T &,std::ostream *)' being compiled
+          with
+          [
+              T=std::tuple<>
+          ] (compiling source file ..\..\source\testing\unitTesting.cc)
+  Torque 2D.vcxproj -> E:\torque\Game\AlienShipGame\engine\compilers\VisualStudio 2012\../../../Torque2D_DEBUG.exe
