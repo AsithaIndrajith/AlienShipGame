@@ -4,11 +4,13 @@ function AlienShipToy::create( %this )
     // Reset the toy.
     AlienShipToy.reset();
     AlienShipToy.GlobalPrevTime=getSimTime();
+    AlienShipToy.GlobalTime=getSimTime();
     AlienShipToy.HitCount=0;
     AlienShipToy.ScoreValue=0;
     AlienShipToy.HealthValue=100;
     AlienShipToy.FuelValue=100;
     AlienShipToy.MissileHit=getSimTime();
+    AlienShipToy.IsExplode=false;
     %music = alxPlay("AlienShipToy:background");
 }
 
@@ -67,6 +69,17 @@ function AlienShipToy::createBackground( %this )
     %object2.BodyType = "static";
     SandboxScene.add( %object2 ); 
     
+    %levelText = new ImageFont();
+    AlienShipToy.LevelText=%levelText;
+    %levelText.Image = "ToyAssets:Font";
+    %levelText.Position = "0  30";
+    %levelText.FontSize = "3 3";
+    %levelText.FontPadding = 0;
+    %levelText.TextAlignment = "Center";
+    %levelText.Text = "Level 1";
+    %levelText.BodyType = "static";
+    SandboxScene.add( %levelText );
+    
     //Add health bar
     %healthText = new ImageFont();
     AlienShipToy.Health=%healthText;
@@ -111,34 +124,14 @@ function AlienShipToy::createFarScroller( %this )
 {    
     // Create the scroller.
     %object = new Scroller();
-    
-    // Note this scroller for the touch controls.
     AlienShipToy.FarScroller = %object;
-    
-    // Always try to configure a scene-object prior to adding it to a scene for best performance.
-
-    // Set the position.
-    %object.Position = "0 -10";
-
-    // Set the size.        
+    %object.Position = "0 -10";     
     %object.Size = "100 75";
-
-    // Set to the furthest background layer.
     %object.SceneLayer = 31;
-    
-    // Set the scroller to use a static image.
     %object.Image = "ToyAssets:TreeBackground2";
-    
-    // We don't really need to do this as the frame is set to zero by default.
     %object.Frame = 0;
-
-    // Set the scroller moving in the X axis.
     %object.ScrollX = 10;
-    
-    // Set the scroller to only show half of the static image in the X axis.
     %object.RepeatX = 0.5;
-        
-    // Add the sprite to the scene.
     SandboxScene.add( %object );    
 }
 
@@ -146,38 +139,16 @@ function AlienShipToy::createFarScroller( %this )
 
 function AlienShipToy::createNearScroller( %this )
 {    
-    // Create the scroller.
     %object = new Scroller();
-
-    // Note this scroller for the touch controls.
-    AlienShipToy.NearScroller = %object;    
-    
-    // Always try to configure a scene-object prior to adding it to a scene for best performance.
-
-    // Set the position.
-    %object.Position = "0 -10";
-
-    // Set the size.        
+    AlienShipToy.NearScroller = %object;
+    %object.Position = "0 -10";    
     %object.Size = "100 75";
-    
-    // Set to the furthest background layer.
     %object.SceneLayer = 31;
-    
-    // Set the scroller to use a static image.
     %object.Image = "ToyAssets:TreeBackground1";
-    
-    // We don't really need to do this as the frame is set to zero by default.
     %object.Frame = 0;
-    
-    // Set the scroller moving in the X axis.
     %object.ScrollX = 20;
-
-    // Set the scroller to only show half of the static image in the X axis.
     %object.RepeatX = 0.5;
-    
-    // Add the sprite to the scene.
-    SandboxScene.add( %object ); 
-    
+    SandboxScene.add( %object );  
     
 }
 
@@ -197,6 +168,8 @@ function AlienShipToy::createDebris(%this,%val)
         %player.createPolygonBoxCollisionShape(15, 15);
         %player.setBullet( true );
         SandboxScene.add( %player ); 
+        
+        
     }else if(%val=1){
         $TestArray[0]="AlienShipToy:bomb";
         $TestArray[1]="AlienShipToy:tnt";
@@ -217,7 +190,7 @@ function AlienShipToy::createDebris(%this,%val)
         %obj.setDefaultDensity(0.1);
         %obj.createPolygonBoxCollisionShape(4, 4);
         %obj.setBullet( true );
-        %obj.setLinearVelocity(-20,0);
+        
         SandboxScene.add(%obj);
         
         //Enemy 2
@@ -233,7 +206,7 @@ function AlienShipToy::createDebris(%this,%val)
         %obj2.setDefaultDensity(0.1);
         %obj2.createPolygonBoxCollisionShape(4, 4);
         %obj2.setBullet( true );
-        %obj2.setLinearVelocity(-20,0);
+        
         SandboxScene.add(%obj2);
         
         //Enemy 3
@@ -249,10 +222,33 @@ function AlienShipToy::createDebris(%this,%val)
         %obj3.setDefaultDensity(0.1);
         %obj3.createPolygonBoxCollisionShape(4, 4);
         %obj3.setBullet( true );
-        %obj3.setLinearVelocity(-20,0);
+        
         SandboxScene.add(%obj3);
         
+        %newTime=getSimTime();
+        %prevTime=AlienShipToy.GlobalTime;
+        %difference=(%newTime-prevTime)/1000;
         
+        if(%difference<240){
+            %obj.setLinearVelocity(-15,0);
+            %obj2.setLinearVelocity(-15,0);
+            %obj3.setLinearVelocity(-15,0);
+        }else if(%difference>240 && %difference<540){
+            AlienShipToy.LevelText.Text="Level 2";
+            %obj.setLinearVelocity(-25,0);
+            %obj2.setLinearVelocity(-25,0);
+            %obj3.setLinearVelocity(-25,0);
+        }else if(%difference>540 && %difference<760){
+            AlienShipToy.LevelText.Text="Level 3";
+            %obj.setLinearVelocity(-35,0);
+            %obj2.setLinearVelocity(-35,0);
+            %obj3.setLinearVelocity(-35,0);
+        }else if(%difference>760 && %difference<1060){
+            AlienShipToy.LevelText.Text="Level 4";
+            %obj.setLinearVelocity(-45,0);
+            %obj2.setLinearVelocity(-45,0);
+            %obj3.setLinearVelocity(-45,0);
+        }
     }
 }
 
@@ -260,21 +256,16 @@ function AlienShipToy::createDebris(%this,%val)
 
 function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
 {
-    // Set the scrollers speed to be the distance from the farground scrollers origin.
-    // Also use the sign to control the direction of scrolling.
+    
+    
     %playerX = %worldPosition.x;
     %playerY = %worldPosition.y;
     
-    // Set the scroller speeds.
     AlienShipToy.Player.Position.x = %playerX;
     AlienShipToy.Player.Position.y = %playerY;
     
     %playerx=AlienShipToy.Player.Position.x;
     %playery=AlienShipToy.Player.Position.y;
-    
-//    echo("++++Player pos++++");
-//    echo(%playerx);
-//    echo(%playery);
     
     if(%playerx>-14){
         AlienShipToy.Player.Position.x=-15;
@@ -321,7 +312,7 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
         for(%i=0;%i<10;%i++){
             %randomPosition4 = getRandom(-10, 20) SPC getRandom(-40, 30);
             %particlePlayer = new ParticlePlayer();
-            %particlePlayer.BodyType = Static;
+            %particlePlayer.BodyType = "static";
             %particlePlayer.Position=%randomPosition4;    
             %particlePlayer.Size="10";
             %particlePlayer.SceneLayer = 31;
@@ -341,7 +332,7 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
     %newTime=getSimTime();
     %prevTime=AlienShipToy.GlobalPrevTime;
     %timeGap=(%newTime-%prevTime)/1000;
-    if(%timeGap>10){
+    if(%timeGap>8){
         //echo("Time gap > 10");
         AlienShipToy.createDebris(1);
         AlienShipToy.GlobalPrevTime=getSimTime();
@@ -384,7 +375,8 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
     %enemy3Type=AlienShipToy.Enemy3Type;
     
     if((%distance1x>0 && %distance1x<12)&&(%distance1y>0 && %distance1y<12)){
-        echo("Collide with ship");
+        echo("1 Collide with ship");
+        
         //echo(%distance1x);
         if(%enemy1Type==0||%enemy1Type==1){
             AlienShipToy.HitCount++;
@@ -394,8 +386,8 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
             
             //Add explosion particles
             %particlePlayer = new ParticlePlayer();
-            %particlePlayer.BodyType = Static;
-            %particlePlayer.Position=%playerPositionX @ %playerPositionY;    
+            %particlePlayer.BodyType = "static";
+            %particlePlayer.Position=%worldPosition.x SPC %worldPosition.y;    
             %particlePlayer.Size="10";
             %particlePlayer.SceneLayer = 31;
             %particlePlayer.ParticleInterpolation = true;
@@ -405,22 +397,35 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
             %music = alxPlay("AlienShipToy:bombing");
             
         }else if(%enemy1Type==2||%enemy1Type==3||%enemy1Type==4){
-           if(AlienShipToy.HealthValue!=100){
+           if(AlienShipToy.HealthValue+1<100){
                 AlienShipToy.HealthValue++;
+                %health=AlienShipToy.HealthValue;
+                AlienShipToy.Health.Text=%health;
+                %music = alxPlay("AlienShipToy:eatFruit");
+            }else{
+                AlienShipToy.HealthValue+=100-AlienShipToy.HealthValue;
                 %health=AlienShipToy.HealthValue;
                 AlienShipToy.Health.Text=%health;
                 %music = alxPlay("AlienShipToy:eatFruit");
             }
         }else if(%enemy1Type==5){
-            AlienShipToy.FuelValue+=8;
-            %fuel=AlienShipToy.FuelValue;
-            AlienShipToy.Fuel.Text=%fuel;
-            %music = alxPlay("AlienShipToy:fuelUp");
+            if( AlienShipToy.FuelValue+20<100){
+                AlienShipToy.FuelValue+=20;
+                %fuel=AlienShipToy.FuelValue;
+                AlienShipToy.Fuel.Text=%fuel;
+                %music = alxPlay("AlienShipToy:fuelUp");
+            }else{
+                AlienShipToy.FuelValue+=100-AlienShipToy.FuelValue;
+                %fuel=AlienShipToy.FuelValue;
+                AlienShipToy.Fuel.Text=%fuel;
+                %music = alxPlay("AlienShipToy:fuelUp");
+            }
         }
         AlienShipToy.Enemy1.delete();
         %distance=0;
     }else if((%distance2x>0 && %distance2x<12)&&(%distance2y>0 && %distance2y<12)){
-        echo("Collide with ship");
+        echo("2 Collide with ship");
+        
         if(%enemy2Type==0||%enemy2Type==1){
             AlienShipToy.HitCount++;
             AlienShipToy.HealthValue-=5;
@@ -428,8 +433,8 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
             AlienShipToy.Health.Text=%health;
             
             %particlePlayer = new ParticlePlayer();
-            %particlePlayer.BodyType = Static;
-            %particlePlayer.Position=%playerPositionX @ %playerPositionY;    
+            %particlePlayer.BodyType = "static";
+            %particlePlayer.Position=%worldPosition.x SPC %worldPosition.y;    
             %particlePlayer.Size="10";
             %particlePlayer.SceneLayer = 31;
             %particlePlayer.ParticleInterpolation = true;
@@ -439,22 +444,35 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
             %music = alxPlay("AlienShipToy:bombing");
             
         }else if(%enemy2Type==2||%enemy2Type==3||%enemy2Type==4){
-            if(AlienShipToy.HealthValue!=100){
+            if(AlienShipToy.HealthValue+1<100){
                 AlienShipToy.HealthValue++;
+                %health=AlienShipToy.HealthValue;
+                AlienShipToy.Health.Text=%health;
+                %music = alxPlay("AlienShipToy:eatFruit");
+            }else{
+                AlienShipToy.HealthValue+=100-AlienShipToy.HealthValue;
                 %health=AlienShipToy.HealthValue;
                 AlienShipToy.Health.Text=%health;
                 %music = alxPlay("AlienShipToy:eatFruit");
             }
         }else if(%enemy2Type==5){
-            AlienShipToy.FuelValue+=8;
-            %fuel=AlienShipToy.FuelValue;
-            AlienShipToy.Fuel.Text=%fuel;
-            %music = alxPlay("AlienShipToy:fuelUp");
+            if( AlienShipToy.FuelValue+20<100){
+                AlienShipToy.FuelValue+=20;
+                %fuel=AlienShipToy.FuelValue;
+                AlienShipToy.Fuel.Text=%fuel;
+                %music = alxPlay("AlienShipToy:fuelUp");
+            }else{
+                AlienShipToy.FuelValue+=100-AlienShipToy.FuelValue;
+                %fuel=AlienShipToy.FuelValue;
+                AlienShipToy.Fuel.Text=%fuel;
+                %music = alxPlay("AlienShipToy:fuelUp");
+            }
         }
         AlienShipToy.Enemy2.delete();
         %distance=0;
     }else if((%distance3x>0 && %distance3x<12)&&(%distance3y>0 && %distance3y<12)){
-        echo("Collide with ship");
+        echo("3 Collide with ship");
+        
         if(%enemy3Type==0||%enemy3Type==1){
             AlienShipToy.HitCount++;
             AlienShipToy.HealthValue-=5;
@@ -462,8 +480,8 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
             AlienShipToy.Health.Text=%health;
             
             %particlePlayer = new ParticlePlayer();
-            %particlePlayer.BodyType = Static;
-            %particlePlayer.Position=%playerPositionX @ %playerPositionY;    
+            %particlePlayer.BodyType = "static";
+            %particlePlayer.Position=%worldPosition.x SPC %worldPosition.y;    
             %particlePlayer.Size="10";
             %particlePlayer.SceneLayer = 31;
             %particlePlayer.ParticleInterpolation = true;
@@ -473,17 +491,29 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
             %music = alxPlay("AlienShipToy:bombing");
             
         }else if(%enemy3Type==2||%enemy3Type==3||%enemy3Type==4){
-            if(AlienShipToy.HealthValue!=100){
+            if(AlienShipToy.HealthValue+1<100){
                 AlienShipToy.HealthValue++;
+                %health=AlienShipToy.HealthValue;
+                AlienShipToy.Health.Text=%health;
+                %music = alxPlay("AlienShipToy:eatFruit");
+            }else{
+                AlienShipToy.HealthValue+=100-AlienShipToy.HealthValue;
                 %health=AlienShipToy.HealthValue;
                 AlienShipToy.Health.Text=%health;
                 %music = alxPlay("AlienShipToy:eatFruit");
             }
         }else if(%enemy3Type==5){
-            AlienShipToy.FuelValue+=8;
-            %fuel=AlienShipToy.FuelValue;
-            AlienShipToy.Fuel.Text=%fuel;
-            %music = alxPlay("AlienShipToy:fuelUp");
+            if( AlienShipToy.FuelValue+20<100){
+                AlienShipToy.FuelValue+=20;
+                %fuel=AlienShipToy.FuelValue;
+                AlienShipToy.Fuel.Text=%fuel;
+                %music = alxPlay("AlienShipToy:fuelUp");
+            }else{
+                AlienShipToy.FuelValue+=100-AlienShipToy.FuelValue;
+                %fuel=AlienShipToy.FuelValue;
+                AlienShipToy.Fuel.Text=%fuel;
+                %music = alxPlay("AlienShipToy:fuelUp");
+            }
         }
         AlienShipToy.Enemy3.delete();
         %distance=0;
@@ -491,6 +521,7 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
     
     if(%enemy1PositionX<-35){
         echo("Collide not with ship");
+        
         AlienShipToy.Enemy1.delete();
         if(%enemy1Type==0||%enemy1Type==1){
             AlienShipToy.HealthValue-=3;
@@ -498,8 +529,8 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
             AlienShipToy.Health.Text=%health;
             
             %particlePlayer = new ParticlePlayer();
-            %particlePlayer.BodyType = Static;
-            %particlePlayer.Position=%playerPositionX @ %playerPositionY;    
+            %particlePlayer.BodyType = "static";
+            %particlePlayer.Position=%worldPosition.x SPC %worldPosition.y;    
             %particlePlayer.Size="10";
             %particlePlayer.SceneLayer = 31;
             %particlePlayer.ParticleInterpolation = true;
@@ -511,6 +542,7 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
         }
     }else if(%enemy3PositionX<-35){
         echo("Collide not with ship");
+        
         AlienShipToy.Enemy3.delete();
         if(%enemy3Type==0||%enemy3Type==1){
             AlienShipToy.HealthValue-=3;
@@ -518,8 +550,8 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
             AlienShipToy.Health.Text=%health;
             
             %particlePlayer = new ParticlePlayer();
-            %particlePlayer.BodyType = Static;
-            %particlePlayer.Position=%playerPositionX @ %playerPositionY;    
+            %particlePlayer.BodyType = "static";
+            %particlePlayer.Position=%worldPosition.x SPC %worldPosition.y;    
             %particlePlayer.Size="10";
             %particlePlayer.SceneLayer = 31;
             %particlePlayer.ParticleInterpolation = true;
@@ -530,6 +562,7 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
         }
     }else if(%enemy2PositionX<-35){
         echo("Collide not with ship");
+        
         AlienShipToy.Enemy2.delete();
         if(%enemy2Type==0||%enemy2Type==1){
             AlienShipToy.HealthValue-=3;
@@ -537,8 +570,8 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
             AlienShipToy.Health.Text=%health;
             
             %particlePlayer = new ParticlePlayer();
-            %particlePlayer.BodyType = Static;
-            %particlePlayer.Position=%playerPositionX @ %playerPositionY;    
+            %particlePlayer.BodyType = "static";
+            %particlePlayer.Position=%worldPosition.x SPC %worldPosition.y;    
             %particlePlayer.Size="10";
             %particlePlayer.SceneLayer = 31;
             %particlePlayer.ParticleInterpolation = true;
@@ -548,17 +581,21 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
             %music = alxPlay("AlienShipToy:bombing");
         }
     }
+    %explode=AlienShipToy.IsExplode;
     
-    if((%distanceMissile1X<14 && %distanceMissile1X>0)&&(%distanceMissile1Y<10 && %distanceMissile1Y>0)){
-        echo("+++++++++++Enemy1");
+    if((%distanceMissile1X<14 && %distanceMissile1X>0)&&(%distanceMissile1Y<10 && %distanceMissile1Y>0)&& %explode){
+        echo("1 Collide with missile");
+        %tempMissilePositionX=AlienShipToy.Missile.Position.x;
+        %tempMissilePositionY=AlienShipToy.Missile.Position.y;
+        
         if(%enemy1Type==0||%enemy1Type==1){
-            AlienShipToy.ScoreValue++;
+            AlienShipToy.ScoreValue+=10;
             %score=AlienShipToy.ScoreValue;
             AlienShipToy.Score.Text="Score " @ %score;
         }
         %particlePlayer = new ParticlePlayer();
-        %particlePlayer.BodyType = Static;
-        %particlePlayer.Position=%missilePositionX @ %missilePositionY-5;    
+        %particlePlayer.BodyType = "static";
+        %particlePlayer.Position=%tempMissilePositionX SPC %tempMissilePositionY;    
         %particlePlayer.Size="10";
         %particlePlayer.SceneLayer = 31;
         %particlePlayer.ParticleInterpolation = true;
@@ -570,18 +607,22 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
         AlienShipToy.Missile.delete();
         %distanceMissile1X=0;
         %distanceMissile1Y=0;
+        AlienShipToy.IsExplode=false;
     }
     
-    else if((%distanceMissile2X<14 && %distanceMissile2X>0)&&(%distanceMissile2Y<10 && %distanceMissile2Y>0)){
+    else if((%distanceMissile2X<14 && %distanceMissile2X>0)&&(%distanceMissile2Y<10 && %distanceMissile2Y>0)&& %explode){
         echo("+++++++++++Enemy2");
+        %tempMissilePositionX=AlienShipToy.Missile.Position.x;
+        %tempMissilePositionY=AlienShipToy.Missile.Position.y;
+        
         if(%enemy2Type==0||%enemy2Type==1){
-            AlienShipToy.ScoreValue++;
+            AlienShipToy.ScoreValue+=10;
             %score=AlienShipToy.ScoreValue;
             AlienShipToy.Score.Text="Score " @ %score;
         }
         %particlePlayer = new ParticlePlayer();
-        %particlePlayer.BodyType = Static;
-        %particlePlayer.Position=%missilePositionX @ %missilePositionY-5;    
+        %particlePlayer.BodyType = "static";
+        %particlePlayer.Position=%tempMissilePositionX SPC %tempMissilePositionY;    
         %particlePlayer.Size="10";
         %particlePlayer.SceneLayer = 31;
         %particlePlayer.ParticleInterpolation = true;
@@ -594,18 +635,22 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
         AlienShipToy.Missile.delete();
         %distanceMissile2X=0;
         %distanceMissile2Y=0;
+        AlienShipToy.IsExplode=false;
     }
-    else if((%distanceMissile3X<14 && %distanceMissile3X>0)&&(%distanceMissile3Y<10 && %distanceMissile3Y>0)){
+    else if((%distanceMissile3X<14 && %distanceMissile3X>0)&&(%distanceMissile3Y<10 && %distanceMissile3Y>0)&& %explode){
         echo("+++++++++++Enemy3");
+        %tempMissilePositionX=AlienShipToy.Missile.Position.x;
+        %tempMissilePositionY=AlienShipToy.Missile.Position.y;
+        
         if(%enemy3Type==0||%enemy3Type==1){
-            AlienShipToy.ScoreValue++;
+            AlienShipToy.ScoreValue+=10;
             %score=AlienShipToy.ScoreValue;
             AlienShipToy.Score.Text="Score " @ %score;
             
         }
         %particlePlayer = new ParticlePlayer();
-        %particlePlayer.BodyType = Static;
-        %particlePlayer.Position=%missilePositionX @ %missilePositionY-5;    
+        %particlePlayer.BodyType = "static";
+        %particlePlayer.Position=%tempMissilePositionX SPC %tempMissilePositionY;    
         %particlePlayer.Size="10";
         %particlePlayer.SceneLayer = 31;
         %particlePlayer.ParticleInterpolation = true;
@@ -618,6 +663,7 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
         AlienShipToy.Missile.delete();
         %distanceMissile3X=0;
         %distanceMissile3Y=0;
+        AlienShipToy.IsExplode=false;
     }
     
     AlienShipToy.Player.SetAngularVelocity(0);
@@ -631,10 +677,11 @@ function AlienShipToy::onTouchDown(%this, %touchID, %worldPosition)
     %missileHitTime=AlienShipToy.MissileHit;
     %newTime=getSimTime();
     %possibleTime= (%newTime-%missileHitTime)/1000;
-    if(%possibleTime>10){
+    if(%possibleTime>2){
         //echo(%possibleTime);
-        %missilePositionX=%worldPosition.x;
-        %missilePositionY=%worldPosition.y;
+        AlienShipToy.IsExplode=true;
+        %missilePositionX= AlienShipToy.Player.Position.x;
+        %missilePositionY=AlienShipToy.Player.Position.y;
         %missile=new Sprite();
         AlienShipToy.Missile=%missile;
         //%randomPosition = getRandom(-10, 10) SPC getRandom(2, 8);
@@ -644,18 +691,24 @@ function AlienShipToy::onTouchDown(%this, %touchID, %worldPosition)
         %missile.setDefaultFriction(1.0);
         %missile.setDefaultDensity(0.1);
         %missile.createPolygonBoxCollisionShape(20, 10);
-        %missile.setLinearVelocity(120,0);
+        %missile.setLinearVelocity(110,0);
         AlienShipToy.Player.SetAngularVelocity(0);
         SandboxScene.add( %missile );
         %music = alxPlay("AlienShipToy:missileSound");
         AlienShipToy.MissileHit=getSimTime();
+    }else{
+        %missilePositionX= -200;
+        %missilePositionY=-200;
+        AlienShipToy.Missile.Position.x=%worldPosition.x;
+        AlienShipToy.Missile.Position.y=%worldPosition.y;
     }
    
 }
 
-function AlienShipToy::onMiddleMouseDown(%this, %touchID, %worldPosition)
+function AlienShipToy::onRightMouseDown(%this, %touchID, %worldPosition)
 {
     AlienShipToy.create();
 }
+
 
 

@@ -29,4 +29,4 @@ $pref::Video::preferOpenGL = "1";
 $pref::Video::profiledRenderer = "GeForce 940MX/PCIe/SSE2";
 $pref::Video::profiledVendor = "NVIDIA Corporation";
 $pref::Video::safeModeOn = "1";
-$pref::Video::windowedRes = "1920 1080 32";
+$pref::Video::windowedRes = "1024 768 16";

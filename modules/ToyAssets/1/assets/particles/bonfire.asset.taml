@@ -1,5 +1,7 @@
 <ParticleAsset
-    AssetName="bonfire">
+    AssetName="bonfire"
+    Lifetime="1"
+    LifeMode="KILL">
     <ParticleAssetEmitter
         EmitterName="smoke"
 		EmitterType="line"
