@@ -46,6 +46,19 @@ Music playing until game ends
 #### Fuel filling
 When ship collide with a real fuel tank
 
+## Instruction to Play
+
+* Moving the ship
+When cursor moved around the screen. But ship cannot go beyond a certain limit.
+
+* Missile launching
+When click the screen missile will launch. But time gap between 2 consecutive missiles is 2 seconds. 
+
+* Restart
+Right click will restart the game.
+
+**Important: Keep moving until game ends.**
+
 ## **Screens**
 
 #### Start
