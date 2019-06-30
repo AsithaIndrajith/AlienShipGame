@@ -15,7 +15,7 @@ function AlienShipToy::create( %this )
     AlienShipToy.SetImage2=false;
     AlienShipToy.SetImage3=false;
     AlienShipToy.SetImage4=false;
-    AlienShipToy.MissileCount=20;
+    AlienShipToy.MissileCount=30;
     %music = alxPlay("AlienShipToy:background");
 }
 
@@ -45,19 +45,9 @@ function AlienShipToy::createBackground( %this )
 {    
     // Create the sprite.
     %object = new Sprite();
-       
-    // Always try to configure a scene-object prior to adding it to a scene for best performance.
-
-    // Set the position.
-    %object.Position = "0 0";
-
-    // Set the size.        
+    %object.Position = "0 0";        
     %object.Size = "100 75";
-    
-    // Set to the furthest background layer.
     %object.SceneLayer = 31;
-    
-    // Set an image.
     %object.Image = "ToyAssets:jungleSky";
             
     // Add the sprite to the scene.
@@ -81,7 +71,7 @@ function AlienShipToy::createBackground( %this )
     %missileCountText.FontSize = "3 3";
     %missileCountText.FontPadding = 0;
     %missileCountText.TextAlignment = "Center";
-    %missileCountText.Text = "20";
+    %missileCountText.Text = "30";
     %missileCountText.BodyType = "static";
     SandboxScene.add( %missileCountText );
     

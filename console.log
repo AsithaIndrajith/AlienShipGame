@@ -1,4 +1,4 @@
-//-------------------------- 6/30/2019 -- 18:58:15 -----
+//-------------------------- 6/30/2019 -- 22:31:38 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -41,271 +41,134 @@ Max Texture Size reported as: 16384
 OpenAL Driver Init
 OpenAL Driver Init Success
 E:/torque/Game/AlienShipGame/modules/AlienShipToy/1/main.cs (302): string always evaluates to 0.
-E:/torque/Game/AlienShipGame/modules/AlienShipToy/1/main.cs (760): string always evaluates to 0.
-E:/torque/Game/AlienShipGame/modules/AlienShipToy/1/main.cs (790): string always evaluates to 0.
-E:/torque/Game/AlienShipGame/modules/AlienShipToy/1/main.cs (820): string always evaluates to 0.
+E:/torque/Game/AlienShipGame/modules/AlienShipToy/1/main.cs (734): string always evaluates to 0.
+E:/torque/Game/AlienShipGame/modules/AlienShipToy/1/main.cs (764): string always evaluates to 0.
+E:/torque/Game/AlienShipGame/modules/AlienShipToy/1/main.cs (794): string always evaluates to 0.
+30
++++++++++++Enemy2
+1 Collide with ship
+3 Collide with ship
+29
++++++++++++Enemy3
+1 Collide with ship
 2 Collide with ship
+28
++++++++++++Enemy3
+1 Collide with ship
+2 Collide with ship
+27
+1 Collide with missile
+2 Collide with ship
+3 Collide with ship
+26
++++++++++++Enemy2
+1 Collide with ship
+3 Collide with ship
+25
+1 Collide with ship
+3 Collide with ship
+2 Collide with ship
+24
++++++++++++Enemy2
+23
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy2
++++++++++++Enemy3
+1 Collide with ship
+22
+3 Collide with ship
+2 Collide with ship
+Collide not with ship
+21
++++++++++++Enemy2
 1 Collide with ship
 3 Collide with ship
 20
-+++++++++++Enemy3
+1 Collide with missile
 19
 +++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-1 Collide with ship
 2 Collide with ship
 18
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
++++++++++++Enemy3
 17
 1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-+++++++++++Enemy3
+2 Collide with ship
 16
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-15
 +++++++++++Enemy2
+15
+1 Collide with missile
+Collide not with ship
 14
+1 Collide with missile
 13
 1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
+1 Collide with missile
 2 Collide with ship
+Collide not with ship
 12
-+++++++++++Enemy3
+1 Collide with ship
+3 Collide with ship
+2 Collide with ship
+3 Collide with ship
+1 Collide with ship
+2 Collide with ship
 11
-+++++++++++Enemy3
-10
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy3
-+++++++++++Enemy2
-9
 1 Collide with missile
-8
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-1 Collide with missile
-7
-+++++++++++Enemy3
-6
 2 Collide with ship
-5
-+++++++++++Enemy2
-4
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy2
-+++++++++++Enemy3
-3
-1 Collide with ship
-2
-1
-1 Collide with missile
-3 Collide with ship
-2 Collide with ship
-Collide not with ship
-Collide not with ship
-Collide not with ship
-3 Collide with ship
-1 Collide with ship
-2 Collide with ship
-3 Collide with ship
-1 Collide with ship
-2 Collide with ship
-2 Collide with ship
-1 Collide with ship
-Collide not with ship
-2 Collide with ship
-1 Collide with ship
-Collide not with ship
-1 Collide with ship
-2 Collide with ship
-3 Collide with ship
-3 Collide with ship
-1 Collide with ship
-2 Collide with ship
-2 Collide with ship
-1 Collide with ship
-Collide not with ship
-1 Collide with ship
-3 Collide with ship
-2 Collide with ship
-3 Collide with ship
-1 Collide with ship
-2 Collide with ship
-3 Collide with ship
-1 Collide with ship
-2 Collide with ship
-1 Collide with ship
-3 Collide with ship
-2 Collide with ship
-3 Collide with ship
-2 Collide with ship
-Collide not with ship
-2 Collide with ship
-Collide not with ship
 Collide not with ship
 Shutting down the OpenGL display device...
 Making the GL rendering context not current...
