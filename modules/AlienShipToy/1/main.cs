@@ -11,6 +11,11 @@ function AlienShipToy::create( %this )
     AlienShipToy.FuelValue=100;
     AlienShipToy.MissileHit=getSimTime();
     AlienShipToy.IsExplode=false;
+    AlienShipToy.SetImage1=false;
+    AlienShipToy.SetImage2=false;
+    AlienShipToy.SetImage3=false;
+    AlienShipToy.SetImage4=false;
+    AlienShipToy.MissileCount=20;
     %music = alxPlay("AlienShipToy:background");
 }
 
@@ -61,13 +66,30 @@ function AlienShipToy::createBackground( %this )
     %object2 = new ImageFont();
     AlienShipToy.Score=%object2;
     %object2.Image = "ToyAssets:fancyFont";
-    %object2.Position = "35  30";
+    %object2.Position = "35 30";
     %object2.FontSize = "3 3";
     %object2.FontPadding = 0;
     %object2.TextAlignment = "Center";
     %object2.Text = "Score 0";
     %object2.BodyType = "static";
     SandboxScene.add( %object2 ); 
+    
+    %missileCountText = new ImageFont();
+    AlienShipToy.MissileCountText=%missileCountText;
+    %missileCountText.Image = "ToyAssets:fancyFont";
+    %missileCountText.Position = "-37 20";
+    %missileCountText.FontSize = "3 3";
+    %missileCountText.FontPadding = 0;
+    %missileCountText.TextAlignment = "Center";
+    %missileCountText.Text = "20";
+    %missileCountText.BodyType = "static";
+    SandboxScene.add( %missileCountText );
+    
+    %missileCountBar=new Sprite();
+    %missileCountBar.setImage("AlienShipToy:missile");
+    %missileCountBar.setPosition(-45,20);
+    %missileCountBar.setSize(5, 4);
+    SandboxScene.add( %missileCountBar );
     
     %levelText = new ImageFont();
     AlienShipToy.LevelText=%levelText;
@@ -316,6 +338,7 @@ function AlienShipToy::createDebris(%this,%val)
 
 function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
 {
+    //Indicating the level upgrading
     %prevTime=AlienShipToy.GlobalTime;
     %newTime=getSimTime();
     %timeDifference=(%newTime-%prevTime)/1000;
@@ -339,6 +362,29 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
         AlienShipToy.BigLevelText.FontSize="4 4";
     }
     
+    //Changing the spaceship status
+    %healthStatus=AlienShipToy.HealthValue;
+    %setImage1 = AlienShipToy.SetImage1;
+    %setImage1 = AlienShipToy.SetImage2;
+    %setImage1 = AlienShipToy.SetImage3;
+    %setImage1 = AlienShipToy.SetImage4;
+    if(%healthStatus>=50 && %healthStatus<75 && !%setImage1){
+        AlienShipToy.Player.setImage("AlienShipToy:spaceship2SmallCrack");
+        AlienShipToy.SetImage1=true;
+    }else if(%healthStatus>=25 && %healthStatus<50 && !%setImage2){
+        AlienShipToy.Player.setImage("AlienShipToy:spaceship2MediumCrack");
+        AlienShipToy.SetImage2=true;
+    }else if(%healthStatus>=15 && %healthStatus<25 && !%setImage3){
+        AlienShipToy.Player.setImage("AlienShipToy:spaceship2BigCrack");
+        AlienShipToy.SetImage3=true;
+    }else if(%healthStatus<15 && !%setImage4){
+        AlienShipToy.Player.setImage("AlienShipToy:spaceship2HugeCrack");
+        AlienShipToy.SetImage4=true;
+        %music = alxPlay("AlienShipToy:alienSiren");
+        AlienShipToy.AlienSiren=%music;
+    }
+    
+    //Add rocket burning animation
     %bonfirePosition=AlienShipToy.Player.Position.x-12 SPC AlienShipToy.Player.Position.y-2;
     %bonfireatship = new ParticlePlayer();
     %bonfireatship.BodyType = "static";
@@ -346,11 +392,11 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
     %bonfireatship.Size="10";
     %bonfireatship.SceneLayer = 31;
     %bonfireatship.ParticleInterpolation = true;
-    %bonfireatship.Particle = "ToyAssets:bonfire";
+    %bonfireatship.Particle = "AlienShipToy:rocketThruster";
     %bonfireatship.SizeScale = 4;
     SandboxScene.add( %bonfireatship );
-    //%music = alxPlay("AlienShipToy:bombing");
     
+    //Restrict player movement area
     %playerX = %worldPosition.x;
     %playerY = %worldPosition.y;
     
@@ -364,9 +410,16 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
         AlienShipToy.Player.Position.x=-15;
     }
     if(%playerx<-38){
-        AlienShipToy.Player.Position.x=-38;
+        AlienShipToy.Player.Position.x=-37;
+    }
+    if(%playery>30){
+        AlienShipToy.Player.Position.y=29;
+    }
+    if(%playery<-30){
+        AlienShipToy.Player.Position.y=-29;
     }
     
+    //End the game if fuel or health insufficient
     %tempFuelValue=AlienShipToy.FuelValue;
     if(%tempFuelValue<0){
         AlienShipToy.FuelValue=0;
@@ -426,11 +479,11 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
     %prevTime=AlienShipToy.GlobalPrevTime;
     %timeGap=(%newTime-%prevTime)/1000;
     if(%timeGap>8){
-        //echo("Time gap > 10");
         AlienShipToy.createDebris(1);
         AlienShipToy.GlobalPrevTime=getSimTime();
     }
     
+    //get object positions to calculate collisions
     %playerPositionX=AlienShipToy.Player.Position.x;
     %playerPositionY=AlienShipToy.Player.Position.y;
     
@@ -779,8 +832,11 @@ function AlienShipToy::onTouchDown(%this, %touchID, %worldPosition)
     %missileHitTime=AlienShipToy.MissileHit;
     %newTime=getSimTime();
     %possibleTime= (%newTime-%missileHitTime)/1000;
-    if(%possibleTime>2){
+    
+    %tempmissilecount=AlienShipToy.MissileCount;
+    if(%possibleTime>2 && %tempmissilecount>0){
         //echo(%possibleTime);
+        echo(%tempmissilecount);
         AlienShipToy.IsExplode=true;
         %missilePositionX= AlienShipToy.Player.Position.x;
         %missilePositionY=AlienShipToy.Player.Position.y;
@@ -798,11 +854,15 @@ function AlienShipToy::onTouchDown(%this, %touchID, %worldPosition)
         SandboxScene.add( %missile );
         %music = alxPlay("AlienShipToy:missileSound");
         AlienShipToy.MissileHit=getSimTime();
+        AlienShipToy.MissileCount--;
+        %missilecount=AlienShipToy.MissileCount;
+        AlienShipToy.MissileCountText.Text=%missilecount;
+        
     }else{
         %missilePositionX= -200;
         %missilePositionY=-200;
         AlienShipToy.Missile.Position.x=%worldPosition.x;
-        AlienShipToy.Missile.Position.y=%worldPosition.y;
+        AlienShipToy.Missile.Position.y=%worldPosition.y-15;
     }
    
 }
