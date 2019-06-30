@@ -60,7 +60,7 @@ function AlienShipToy::createBackground( %this )
     
     %object2 = new ImageFont();
     AlienShipToy.Score=%object2;
-    %object2.Image = "ToyAssets:Font";
+    %object2.Image = "ToyAssets:fancyFont";
     %object2.Position = "35  30";
     %object2.FontSize = "3 3";
     %object2.FontPadding = 0;
@@ -71,7 +71,7 @@ function AlienShipToy::createBackground( %this )
     
     %levelText = new ImageFont();
     AlienShipToy.LevelText=%levelText;
-    %levelText.Image = "ToyAssets:Font";
+    %levelText.Image = "ToyAssets:fancyFont";
     %levelText.Position = "0  30";
     %levelText.FontSize = "3 3";
     %levelText.FontPadding = 0;
@@ -83,7 +83,7 @@ function AlienShipToy::createBackground( %this )
     //Add health bar
     %healthText = new ImageFont();
     AlienShipToy.Health=%healthText;
-    %healthText.Image = "ToyAssets:Font";
+    %healthText.Image = "ToyAssets:fancyFont";
     %healthText.Position = "-37 30";
     %healthText.FontSize = "3 3";
     %healthText.FontPadding = 0;
@@ -101,7 +101,7 @@ function AlienShipToy::createBackground( %this )
     //Add fuel bar
     %fuelText = new ImageFont();
     AlienShipToy.Fuel=%fuelText;
-    %fuelText.Image = "ToyAssets:Font";
+    %fuelText.Image = "ToyAssets:fancyFont";
     %fuelText.Position = "-37 25";
     %fuelText.FontSize = "3 3";
     %fuelText.FontPadding = 0;
@@ -148,7 +148,19 @@ function AlienShipToy::createNearScroller( %this )
     %object.Frame = 0;
     %object.ScrollX = 20;
     %object.RepeatX = 0.5;
-    SandboxScene.add( %object );  
+    SandboxScene.add( %object ); 
+    
+    //Add fuel bar
+    %bigLevelText = new ImageFont();
+    AlienShipToy.BigLevelText=%bigLevelText;
+    %bigLevelText.Image = "ToyAssets:fancyFont";
+    %bigLevelText.Position = "0 0";
+    %bigLevelText.FontSize = "4 4";
+    %bigLevelText.FontPadding = 0;
+    %bigLevelText.TextAlignment = "Center";
+    %bigLevelText.Text = "Level 1";
+    %bigLevelText.BodyType = "static";
+    SandboxScene.add( %bigLevelText );
     
 }
 
@@ -160,7 +172,7 @@ function AlienShipToy::createDebris(%this,%val)
         %player=new Sprite();
         AlienShipToy.Player=%player;
         //%randomPosition = getRandom(-10, 10) SPC getRandom(2, 8);
-        %player.setImage("AlienShipToy:ship");
+        %player.setImage("AlienShipToy:spaceship2");
         %player.setPosition(-40,0);
         %player.setSize(20, 15);
         %player.setDefaultFriction(1.0);
@@ -171,19 +183,55 @@ function AlienShipToy::createDebris(%this,%val)
         
         
     }else if(%val=1){
-        $TestArray[0]="AlienShipToy:bomb";
-        $TestArray[1]="AlienShipToy:tnt";
-        $TestArray[2]="AlienShipToy:banana";
-        $TestArray[3]="AlienShipToy:apple";
-        $TestArray[4]="AlienShipToy:strawberry";
-        $TestArray[5]="AlienShipToy:fuelTank";
+        $TestArray[0,0]="AlienShipToy:bomb";
+        $TestArray[0,1]="AlienShipToy:tnt";
+        $TestArray[0,2]="AlienShipToy:banana";
+        $TestArray[0,3]="AlienShipToy:apple";
+        $TestArray[0,4]="AlienShipToy:strawberry";
+        $TestArray[0,5]="AlienShipToy:fuelTank";
+        
+        $TestArray[1,0]="AlienShipToy:bomb";
+        $TestArray[1,1]="AlienShipToy:tnt";
+        $TestArray[1,2]="AlienShipToy:banana";
+        $TestArray[1,3]="AlienShipToy:apple";
+        $TestArray[1,4]="AlienShipToy:strawberry";
+        $TestArray[1,5]="AlienShipToy:fuelTank";
+        
+        $TestArray[2,0]="AlienShipToy:bomb";
+        $TestArray[2,1]="AlienShipToy:tnt";
+        $TestArray[2,2]="AlienShipToy:banana";
+        $TestArray[2,3]="AlienShipToy:apple";
+        $TestArray[2,4]="AlienShipToy:strawberry";
+        $TestArray[2,5]="AlienShipToy:tnt";
+        
+        $TestArray[3,0]="AlienShipToy:bomb";
+        $TestArray[3,1]="AlienShipToy:tnt";
+        $TestArray[3,2]="AlienShipToy:banana";
+        $TestArray[3,3]="AlienShipToy:apple";
+        $TestArray[3,4]="AlienShipToy:strawberry";
+        $TestArray[3,5]="AlienShipToy:bomb";
+        
+        $TestArray[4,0]="AlienShipToy:bomb";
+        $TestArray[4,1]="AlienShipToy:tnt";
+        $TestArray[4,2]="AlienShipToy:banana";
+        $TestArray[4,3]="AlienShipToy:apple";
+        $TestArray[4,4]="AlienShipToy:strawberry";
+        $TestArray[4,5]="AlienShipToy:tnt";
+        
+        $TestArray[5,0]="AlienShipToy:bomb";
+        $TestArray[5,1]="AlienShipToy:tnt";
+        $TestArray[5,2]="AlienShipToy:bomb";
+        $TestArray[5,3]="AlienShipToy:tnt";
+        $TestArray[5,4]="AlienShipToy:fuelTank";
+        $TestArray[5,5]="AlienShipToy:fuelTank";
         
         %randomArrayIndex1=getRandom(0, 5);
+        %randomArrayIndex11=getRandom(0, 5);
         %randomPosition = getRandom(50, 80) SPC getRandom(-40, 30);
         %obj = new Sprite();   
         AlienShipToy.Enemy1=%obj;
         AlienShipToy.Enemy1Type=%randomArrayIndex1;
-        %obj.setImage($TestArray[%randomArrayIndex1]);
+        %obj.setImage($TestArray[%randomArrayIndex1,%randomArrayIndex11]);
         %obj.setPosition(%randomPosition);
         %obj.setSize(8, 8);
         %obj.setDefaultFriction(1.0);
@@ -195,11 +243,12 @@ function AlienShipToy::createDebris(%this,%val)
         
         //Enemy 2
         %randomArrayIndex2=getRandom(0, 5);
+        %randomArrayIndex22=getRandom(0, 5);
         %randomPosition2 = getRandom(50, 80) SPC getRandom(-40, 30);
         %obj2 = new Sprite();   
         AlienShipToy.Enemy2=%obj2;
         AlienShipToy.Enemy2Type=%randomArrayIndex2;
-        %obj2.setImage($TestArray[%randomArrayIndex2]);
+        %obj2.setImage($TestArray[%randomArrayIndex2,%randomArrayIndex22]);
         %obj2.setPosition(%randomPosition2);
         %obj2.setSize(8, 8);
         %obj2.setDefaultFriction(1.0);
@@ -211,11 +260,12 @@ function AlienShipToy::createDebris(%this,%val)
         
         //Enemy 3
         %randomArrayIndex3=getRandom(0, 5);
+        %randomArrayIndex33=getRandom(0, 5);
         %randomPosition3 = getRandom(50, 80) SPC getRandom(-40, 30);
         %obj3 = new Sprite();   
         AlienShipToy.Enemy3=%obj3;
         AlienShipToy.Enemy3Type=%randomArrayIndex3;
-        %obj3.setImage($TestArray[%randomArrayIndex3]);
+        %obj3.setImage($TestArray[%randomArrayIndex3,%randomArrayIndex3]);
         %obj3.setPosition(%randomPosition3 );
         %obj3.setSize(8, 8);
         %obj3.setDefaultFriction(1.0);
@@ -229,25 +279,35 @@ function AlienShipToy::createDebris(%this,%val)
         %prevTime=AlienShipToy.GlobalTime;
         %difference=(%newTime-prevTime)/1000;
         
-        if(%difference<240){
+        if(%difference<180){
             %obj.setLinearVelocity(-15,0);
             %obj2.setLinearVelocity(-15,0);
             %obj3.setLinearVelocity(-15,0);
-        }else if(%difference>240 && %difference<540){
+        }else if(%difference>180 && %difference<420){
             AlienShipToy.LevelText.Text="Level 2";
             %obj.setLinearVelocity(-25,0);
             %obj2.setLinearVelocity(-25,0);
             %obj3.setLinearVelocity(-25,0);
-        }else if(%difference>540 && %difference<760){
+        }else if(%difference>420 && %difference<720){
             AlienShipToy.LevelText.Text="Level 3";
             %obj.setLinearVelocity(-35,0);
             %obj2.setLinearVelocity(-35,0);
             %obj3.setLinearVelocity(-35,0);
-        }else if(%difference>760 && %difference<1060){
+        }else if(%difference>720 && %difference<1020){
             AlienShipToy.LevelText.Text="Level 4";
             %obj.setLinearVelocity(-45,0);
             %obj2.setLinearVelocity(-45,0);
             %obj3.setLinearVelocity(-45,0);
+        }else if(%difference>1020 && %difference<1340){
+            AlienShipToy.LevelText.Text="Level 5";
+            %obj.setLinearVelocity(-55,0);
+            %obj2.setLinearVelocity(-55,0);
+            %obj3.setLinearVelocity(-55,0);
+        }else if(%difference>1340 && %difference<1660){
+            AlienShipToy.LevelText.Text="Level 6";
+            %obj.setLinearVelocity(-65,0);
+            %obj2.setLinearVelocity(-65,0);
+            %obj3.setLinearVelocity(-65,0);
         }
     }
 }
@@ -256,7 +316,40 @@ function AlienShipToy::createDebris(%this,%val)
 
 function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
 {
+    %prevTime=AlienShipToy.GlobalTime;
+    %newTime=getSimTime();
+    %timeDifference=(%newTime-%prevTime)/1000;
+    if(%timeDifference<6){
+        AlienShipToy.BigLevelText.Text="Level 1";
+    }else if(%timeDifference>6&&%timeDifference<180){
+        AlienShipToy.BigLevelText.Text="Keep moving...";
+        AlienShipToy.BigLevelText.Position="0 25";
+        AlienShipToy.BigLevelText.FontSize="0 0";
+    }else if(%timeDifference>180&&%timeDifference<186){
+        AlienShipToy.BigLevelText.Text="Level 2";
+        AlienShipToy.BigLevelText.Position="0 0";
+        AlienShipToy.BigLevelText.FontSize="4 4";
+    }else if(%timeDifference>186&&%timeDifference<420){
+        AlienShipToy.BigLevelText.Text="Keep moving...";
+        AlienShipToy.BigLevelText.Position="0 25";
+        AlienShipToy.BigLevelText.FontSize="0 0";
+    }else if(%timeDifference>420&&%timeDifference<426){
+        AlienShipToy.BigLevelText.Text="Level 3";
+        AlienShipToy.BigLevelText.Position="0 0";
+        AlienShipToy.BigLevelText.FontSize="4 4";
+    }
     
+    %bonfirePosition=AlienShipToy.Player.Position.x-12 SPC AlienShipToy.Player.Position.y-2;
+    %bonfireatship = new ParticlePlayer();
+    %bonfireatship.BodyType = "static";
+    %bonfireatship.Position=%bonfirePosition;    
+    %bonfireatship.Size="10";
+    %bonfireatship.SceneLayer = 31;
+    %bonfireatship.ParticleInterpolation = true;
+    %bonfireatship.Particle = "ToyAssets:bonfire";
+    %bonfireatship.SizeScale = 4;
+    SandboxScene.add( %bonfireatship );
+    //%music = alxPlay("AlienShipToy:bombing");
     
     %playerX = %worldPosition.x;
     %playerY = %worldPosition.y;
@@ -280,7 +373,7 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
         AlienShipToy.Fuel.Text=0;
         //Add fuel bar
         %overText = new ImageFont();
-        %overText.Image = "ToyAssets:Font";
+        %overText.Image = "ToyAssets:fancyFont";
         %overText.Position = "0 0";
         %overText.FontSize = "8 8";
         %overText.FontPadding = 0;
@@ -300,9 +393,9 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
         AlienShipToy.Health.Text=0;
         //Add fuel bar
         %overText = new ImageFont();
-        %overText.Image = "ToyAssets:Font";
+        %overText.Image = "ToyAssets:fancyFont";
         %overText.Position = "0 0";
-        %overText.FontSize = "8 8";
+        %overText.FontSize = "6 6";
         %overText.FontPadding = 0;
         %overText.TextAlignment = "Center";
         %overText.Text = "Alien Died";
@@ -380,7 +473,7 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
         //echo(%distance1x);
         if(%enemy1Type==0||%enemy1Type==1){
             AlienShipToy.HitCount++;
-            AlienShipToy.HealthValue-=5;
+            AlienShipToy.HealthValue-=10;
             %health=AlienShipToy.HealthValue;
             AlienShipToy.Health.Text=%health;
             
@@ -428,7 +521,7 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
         
         if(%enemy2Type==0||%enemy2Type==1){
             AlienShipToy.HitCount++;
-            AlienShipToy.HealthValue-=5;
+            AlienShipToy.HealthValue-=10;
             %health=AlienShipToy.HealthValue;
             AlienShipToy.Health.Text=%health;
             
@@ -475,7 +568,7 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
         
         if(%enemy3Type==0||%enemy3Type==1){
             AlienShipToy.HitCount++;
-            AlienShipToy.HealthValue-=5;
+            AlienShipToy.HealthValue-=10;
             %health=AlienShipToy.HealthValue;
             AlienShipToy.Health.Text=%health;
             
@@ -585,85 +678,94 @@ function AlienShipToy::onTouchMoved(%this, %touchID, %worldPosition)
     
     if((%distanceMissile1X<14 && %distanceMissile1X>0)&&(%distanceMissile1Y<10 && %distanceMissile1Y>0)&& %explode){
         echo("1 Collide with missile");
-        %tempMissilePositionX=AlienShipToy.Missile.Position.x;
-        %tempMissilePositionY=AlienShipToy.Missile.Position.y;
-        
-        if(%enemy1Type==0||%enemy1Type==1){
-            AlienShipToy.ScoreValue+=10;
-            %score=AlienShipToy.ScoreValue;
-            AlienShipToy.Score.Text="Score " @ %score;
+        if(%enemy1PositionX!=null){
+            %tempMissilePositionX=AlienShipToy.Missile.Position.x;
+            %tempMissilePositionY=AlienShipToy.Missile.Position.y;
+
+            if(%enemy1Type==0||%enemy1Type==1){
+                AlienShipToy.ScoreValue+=10;
+                %score=AlienShipToy.ScoreValue;
+                AlienShipToy.Score.Text="Score " @ %score;
+            }
+            %particlePlayer = new ParticlePlayer();
+            %particlePlayer.BodyType = "static";
+            %particlePlayer.Position=%tempMissilePositionX SPC %tempMissilePositionY;    
+            %particlePlayer.Size="10";
+            %particlePlayer.SceneLayer = 31;
+            %particlePlayer.ParticleInterpolation = true;
+            %particlePlayer.Particle = "ToyAssets:ImpactExplosion";
+            %particlePlayer.SizeScale = 4;
+            SandboxScene.add( %particlePlayer );
+            %music = alxPlay("AlienShipToy:bombing");
+            AlienShipToy.Enemy1.delete();
+            AlienShipToy.Missile.delete();
+            %distanceMissile1X=0;
+            %distanceMissile1Y=0;
+            AlienShipToy.IsExplode=false;
         }
-        %particlePlayer = new ParticlePlayer();
-        %particlePlayer.BodyType = "static";
-        %particlePlayer.Position=%tempMissilePositionX SPC %tempMissilePositionY;    
-        %particlePlayer.Size="10";
-        %particlePlayer.SceneLayer = 31;
-        %particlePlayer.ParticleInterpolation = true;
-        %particlePlayer.Particle = "ToyAssets:ImpactExplosion";
-        %particlePlayer.SizeScale = 4;
-        SandboxScene.add( %particlePlayer );
-        %music = alxPlay("AlienShipToy:bombing");
-        AlienShipToy.Enemy1.delete();
-        AlienShipToy.Missile.delete();
-        %distanceMissile1X=0;
-        %distanceMissile1Y=0;
-        AlienShipToy.IsExplode=false;
+        
     }
     
     else if((%distanceMissile2X<14 && %distanceMissile2X>0)&&(%distanceMissile2Y<10 && %distanceMissile2Y>0)&& %explode){
         echo("+++++++++++Enemy2");
-        %tempMissilePositionX=AlienShipToy.Missile.Position.x;
-        %tempMissilePositionY=AlienShipToy.Missile.Position.y;
-        
-        if(%enemy2Type==0||%enemy2Type==1){
-            AlienShipToy.ScoreValue+=10;
-            %score=AlienShipToy.ScoreValue;
-            AlienShipToy.Score.Text="Score " @ %score;
+        if(%enemy2PositionX!=null){
+            %tempMissilePositionX=AlienShipToy.Missile.Position.x;
+            %tempMissilePositionY=AlienShipToy.Missile.Position.y;
+
+            if(%enemy2Type==0||%enemy2Type==1){
+                AlienShipToy.ScoreValue+=10;
+                %score=AlienShipToy.ScoreValue;
+                AlienShipToy.Score.Text="Score " @ %score;
+            }
+            %particlePlayer = new ParticlePlayer();
+            %particlePlayer.BodyType = "static";
+            %particlePlayer.Position=%tempMissilePositionX SPC %tempMissilePositionY;    
+            %particlePlayer.Size="10";
+            %particlePlayer.SceneLayer = 31;
+            %particlePlayer.ParticleInterpolation = true;
+            %particlePlayer.Particle = "ToyAssets:ImpactExplosion";
+            %particlePlayer.SizeScale = 4;
+            SandboxScene.add( %particlePlayer );
+            %music = alxPlay("AlienShipToy:bombing");
+
+            AlienShipToy.Enemy2.delete();
+            AlienShipToy.Missile.delete();
+            %distanceMissile2X=0;
+            %distanceMissile2Y=0;
+            AlienShipToy.IsExplode=false;
         }
-        %particlePlayer = new ParticlePlayer();
-        %particlePlayer.BodyType = "static";
-        %particlePlayer.Position=%tempMissilePositionX SPC %tempMissilePositionY;    
-        %particlePlayer.Size="10";
-        %particlePlayer.SceneLayer = 31;
-        %particlePlayer.ParticleInterpolation = true;
-        %particlePlayer.Particle = "ToyAssets:ImpactExplosion";
-        %particlePlayer.SizeScale = 4;
-        SandboxScene.add( %particlePlayer );
-        %music = alxPlay("AlienShipToy:bombing");
         
-        AlienShipToy.Enemy2.delete();
-        AlienShipToy.Missile.delete();
-        %distanceMissile2X=0;
-        %distanceMissile2Y=0;
-        AlienShipToy.IsExplode=false;
     }
     else if((%distanceMissile3X<14 && %distanceMissile3X>0)&&(%distanceMissile3Y<10 && %distanceMissile3Y>0)&& %explode){
         echo("+++++++++++Enemy3");
-        %tempMissilePositionX=AlienShipToy.Missile.Position.x;
-        %tempMissilePositionY=AlienShipToy.Missile.Position.y;
-        
-        if(%enemy3Type==0||%enemy3Type==1){
-            AlienShipToy.ScoreValue+=10;
-            %score=AlienShipToy.ScoreValue;
-            AlienShipToy.Score.Text="Score " @ %score;
-            
+        if(%enemy3PositionY!=null){
+            %tempMissilePositionX=AlienShipToy.Missile.Position.x;
+            %tempMissilePositionY=AlienShipToy.Missile.Position.y;
+
+            if(%enemy3Type==0||%enemy3Type==1){
+                AlienShipToy.ScoreValue+=10;
+                %score=AlienShipToy.ScoreValue;
+                AlienShipToy.Score.Text="Score " @ %score;
+
+            }
+            %particlePlayer = new ParticlePlayer();
+            %particlePlayer.BodyType = "static";
+            %particlePlayer.Position=%tempMissilePositionX SPC %tempMissilePositionY;    
+            %particlePlayer.Size="10";
+            %particlePlayer.SceneLayer = 31;
+            %particlePlayer.ParticleInterpolation = true;
+            %particlePlayer.Particle = "ToyAssets:ImpactExplosion";
+            %particlePlayer.SizeScale = 4;
+            SandboxScene.add( %particlePlayer );
+            %music = alxPlay("AlienShipToy:bombing");
+
+            AlienShipToy.Enemy3.delete();
+            AlienShipToy.Missile.delete();
+            %distanceMissile3X=0;
+            %distanceMissile3Y=0;
+            AlienShipToy.IsExplode=false;
         }
-        %particlePlayer = new ParticlePlayer();
-        %particlePlayer.BodyType = "static";
-        %particlePlayer.Position=%tempMissilePositionX SPC %tempMissilePositionY;    
-        %particlePlayer.Size="10";
-        %particlePlayer.SceneLayer = 31;
-        %particlePlayer.ParticleInterpolation = true;
-        %particlePlayer.Particle = "ToyAssets:ImpactExplosion";
-        %particlePlayer.SizeScale = 4;
-        SandboxScene.add( %particlePlayer );
-        %music = alxPlay("AlienShipToy:bombing");
         
-        AlienShipToy.Enemy3.delete();
-        AlienShipToy.Missile.delete();
-        %distanceMissile3X=0;
-        %distanceMissile3Y=0;
-        AlienShipToy.IsExplode=false;
     }
     
     AlienShipToy.Player.SetAngularVelocity(0);

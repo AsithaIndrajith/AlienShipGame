@@ -1,4 +1,4 @@
-//-------------------------- 6/30/2019 -- 03:14:40 -----
+//-------------------------- 6/30/2019 -- 08:27:27 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -40,39 +40,42 @@ OpenGL Init: Disabled Extensions
 Max Texture Size reported as: 16384
 OpenAL Driver Init
 OpenAL Driver Init Success
-E:/torque/Game/AlienShipGame/modules/AlienShipToy/1/main.cs (248): string always evaluates to 0.
-E:/torque/Game/AlienShipGame/modules/AlienShipToy/1/main.cs (248): string always evaluates to 0.
-E:/torque/Game/AlienShipGame/modules/AlienShipToy/1/main.cs (248): string always evaluates to 0.
-2 Collide with ship
-Collide not with ship
-1 Collide with ship
-1 Collide with ship
-3 Collide with ship
-2 Collide with ship
-E:/torque/Game/AlienShipGame/modules/AlienShipToy/1/main.cs (248): string always evaluates to 0.
-E:/torque/Game/AlienShipGame/modules/AlienShipToy/1/main.cs (248): string always evaluates to 0.
-E:/torque/Game/AlienShipGame/modules/AlienShipToy/1/main.cs (248): string always evaluates to 0.
-3 Collide with ship
-2 Collide with ship
-1 Collide with ship
-2 Collide with ship
-3 Collide with ship
-1 Collide with ship
-E:/torque/Game/AlienShipGame/modules/AlienShipToy/1/main.cs (248): string always evaluates to 0.
-E:/torque/Game/AlienShipGame/modules/AlienShipToy/1/main.cs (248): string always evaluates to 0.
-1 Collide with ship
-3 Collide with ship
+E:/torque/Game/AlienShipGame/modules/AlienShipToy/1/main.cs (280): string always evaluates to 0.
+E:/torque/Game/AlienShipGame/modules/AlienShipToy/1/main.cs (681): string always evaluates to 0.
+E:/torque/Game/AlienShipGame/modules/AlienShipToy/1/main.cs (711): string always evaluates to 0.
+E:/torque/Game/AlienShipGame/modules/AlienShipToy/1/main.cs (741): string always evaluates to 0.
+1 Collide with missile
 2 Collide with ship
 3 Collide with ship
 2 Collide with ship
-Collide not with ship
-E:/torque/Game/AlienShipGame/modules/AlienShipToy/1/main.cs (230): string always evaluates to 0.
+3 Collide with ship
+1 Collide with ship
++++++++++++Enemy3
++++++++++++Enemy2
+1 Collide with ship
+1 Collide with missile
+2 Collide with ship
+3 Collide with ship
+1 Collide with missile
+2 Collide with ship
+3 Collide with ship
+1 Collide with missile
+3 Collide with ship
+2 Collide with ship
+1 Collide with missile
 +++++++++++Enemy3
 2 Collide with ship
++++++++++++Enemy2
 1 Collide with ship
-Collide not with ship
-Collide not with ship
-Collide not with ship
++++++++++++Enemy2
+1 Collide with missile
+3 Collide with ship
+1 Collide with missile
+3 Collide with ship
+2 Collide with ship
++++++++++++Enemy3
+1 Collide with missile
+2 Collide with ship
 Shutting down the OpenGL display device...
 Making the GL rendering context not current...
 Deleting the GL rendering context...
