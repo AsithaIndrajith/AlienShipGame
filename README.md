@@ -1,7 +1,6 @@
 # AlienShipGame
-Simple alien ship game using torque 2D engine
 
-**Game Design &amp; Implementation**
+## **Game Design &amp; Implementation**
 
 Set of aliens have found a new planet and they have started bases there. They travel using spaceships in the planet. But inhabitants try to attack them with bombs. These alien spaceships need to survive from the coming obstacles such as bombs until it finds a rescue base. Along the journey it meets bombs, fruits and fuel.
 
@@ -9,15 +8,15 @@ Those bomb will reduce the ship life by **10**. If ship allows any bomb to pass 
 
 Ship can survive by bomb by sending a missile to collide with a bomb. It will increase the score by **10** for each actual bomb hit.
 
-**Game level Design**
+## **Game level Design**
 
 When level increases each obstacles&#39; linear velocity also getting increased by 10.
 
-**Objects**
+## **Objects**
 
-Spaceship
+### Spaceship
 
-**Sounds**
+## **Sounds**
 
 Fruit eating - When ship collide with a real fruit
 
@@ -29,11 +28,11 @@ Background - music playing until game ends
 
 Fuel filling - When ship collide with a real fuel tank
 
-**Screens**
+## **Screens**
 
 Start
 
-**Team**
+## **Team**
 
 | Name | Index Number |
 | --- | --- |
